@@ -12,27 +12,32 @@ import {
 import Flower from "../assets/flower1.png";
 
 const Wrapper = styled.div`
-  padding-top: 42px;
+  padding-top: 20px;
   margin: 0 auto;
-  width: 70%;
+  width: 85%;
 `;
 
+
 const Title = styled.p`
-  font-size: 1rem;
-  color: var(--title-color);
-  font-weight: bold;
+  font-family : BookkMyungjo-Bd;
+  font-size: 1.25rem;
+  // color: var(--white-color);
+  font-weight: 700;
   opacity: 0.85;
   margin-bottom: 0;
   text-align: center;
 `;
 
+
 const Content = styled.p`
-  font-size: 0.72rem;
+  font-size: 1rem;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 16px;
   width: 100%;
   text-align: center;
+  // font-family: BookkMyungjo-Bd
+  font-family: Ownglyph_ryuttung-Rg
 `;
 
 const GroomBride = styled.p`
@@ -44,40 +49,50 @@ const GroomBride = styled.p`
   text-align: center;
 `;
 
-const Image = styled.img`
-  display: block;
-  margin: 0 auto;
-  width: 1.375rem;
-  padding-bottom: 42px;
-`;
+// const Image = styled.img`
+//   display: block;
+//   margin: 0 auto;
+//   width: 1.375rem;
+//   padding-bottom: 42px;
+// `;
 
 const Greeting = () => {
   return (
     <Wrapper>
       <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
-        <Title data-aos="fade-up">초대합니다</Title>
+        <Title data-aos="fade-up">Happy Wedding Worship</Title>
       </Divider>
-      <Image data-aos="fade-up" src={Flower} />
+      {/* <Image data-aos="fade-up" src={Flower} /> */}
       <Content data-aos="fade-up">
-        서로 마주 보며 다져온 사랑을
+        홀로 높아지기 보단 함께 낮아지길 소망하는
+        <br />
+        두 사람이 하나되어 믿음의 길을 걸어가고자 합니다
         <br />
         <br />
-        이제 함께 한곳을 바라보며 걸어갈 수 있는
+        마음을 <span style={{color:"#003366", fontFamily:"BookkMyungjo-Bd"}}>다</span>하여 사랑할 <span style={{color:"#003366", fontFamily:"BookkMyungjo-Bd"}}>운</span>명을 만나
+        <br />
+        서로의 <span style={{color:"#003366", fontFamily:"BookkMyungjo-Bd"}}>동</span>역자로 <span style={{color:"#003366", fontFamily:"BookkMyungjo-Bd"}}>영</span>원을 약속하는 날
         <br />
         <br />
-        큰 사랑으로 키우고자 합니다.
+        따뜻한 발걸음 해주시어
+        <br />
+        자리를 빛내주시면 감사하겠습니다
         <br />
         <br />
-        저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게
+        <span style={{color:"003366", fontFamily:"BookkMyungjo-Bd", fontSize:"1.25rem"}}>
+        무엇보다 뜨겁게 서로 사랑할지니
         <br />
+        사랑은 허다한 죄를 덮느니라
+        </span>
         <br />
-        앞날을 축복해 주시면 감사하겠습니다.
+        베드로 전서 4장 8절
+        <br />
       </Content>
-      <GroomBride data-aos="fade-up">
+      {/* <GroomBride data-aos="fade-up">
         {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 장남 {GROOM_NAME}
         <br />
         {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}의 장녀 {BRIDE_NAME}
-      </GroomBride>
+      </GroomBride> */}
     </Wrapper>
   );
 };

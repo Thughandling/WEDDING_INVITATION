@@ -4,17 +4,28 @@ import styled from "styled-components";
 import Flower from "../assets/flower2.png";
 
 const Wrapper = styled.div`
-  padding-top: 42px;
+  padding-top: 50px;
   width: 70%;
   margin: 0 auto;
 `;
-
+// 
+// const Title = styled.p`
+//   font-family : BookkMyungjo-Bd;
+//   font-size: 1.25rem;
+//   // color: var(--white-color);
+//   font-weight: 700;
+//   opacity: 0.85;
+//   margin-bottom: 0;
+//   text-align: center;
+// `;
 const Title = styled.span`
+  font-family : BookkMyungjo-Bd;
   font-size: 1rem;
-  color: var(--title-color);
-  font-weight: bold;
-  opacity: 0.85;
+  color: #00712D;
+  font-weight: 700;
+  // opacity: 0.85;
   margin-bottom: 0;
+  text-align: center;
 `;
 
 const Image = styled.img`
@@ -25,9 +36,10 @@ const Image = styled.img`
 `;
 
 const Content = styled.p`
+  font-family : BookkMyungjo-Bd;
   font-size: 0.875rem;
   line-height: 1.75;
-  opacity: 0.75;
+  opacity: 0.9;
   width: 100%;
   text-align: center;
   padding-top: 42px;
@@ -47,8 +59,8 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
+    "timestamp" : "1721890068502",
+    "key" : "2k6e4",
     "mapWidth" : "640",
     "mapHeight" : "360"
   }).render();`);
@@ -99,27 +111,27 @@ const Location = () => {
       </Divider>
       <Image src={Flower} />
       <Map
-        id="daumRoughmapContainer1652464367301"
+        id="daumRoughmapContainer1721890068502"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        서울 관악구 남부순환로 1440
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
-        <br />
-        <br />
-        <Title>버스 이용시</Title>
+        그레이스 파티 7층
         <br />
         <br />
-        410-1, 401 호텔수성 앞 하차
+        <Title>셔틀 버스</Title>
         <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
+        <br />
+        !!셔틀!! 신림역 5번 출구 앞
+        <br />
+        그레이스 파티 예식장 하차
         <br />
         <br />
         <Title>지하철 이용시</Title>
         <br />
         <br />
-        3호선 수성못역 하차 (도보 10분)
+        2호선 신대방역 (도보 20분)
       </Content>
     </Wrapper>
   );

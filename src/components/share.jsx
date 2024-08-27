@@ -19,8 +19,9 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.span`
+  font-family : BookkMyungjo-Bd;
   font-size: 1rem;
-  color: var(--title-color);
+  color: #00712D;
   font-weight: bold;
   opacity: 0.85;
   margin-bottom: 0;

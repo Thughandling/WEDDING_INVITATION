@@ -20,29 +20,34 @@ import {
 } from "../../config";
 
 const Wrapper = styled.div`
+  background: #FFFFFF;
   padding-top: 42px;
   padding-bottom: 18px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 `;
 
 const Title = styled.p`
+  font-family : BookkMyungjo-Bd;
   font-size: 1rem;
-  color: var(--title-color);
+  color: #00712D;
   font-weight: bold;
   opacity: 0.85;
   margin-bottom: 0;
 `;
 
 const Content = styled.p`
+  font-family : BookkMyungjo-Bd;
   font-size: 0.875rem;
+  // color: #00712D;
   line-height: 1.75;
   opacity: 0.75;
   margin-bottom: 42px;
 `;
 
 const SubContent = styled.p`
+  font-family : BookkMyungjo-Bd;
   font-size: 0.875rem;
   line-height: 1.75;
   opacity: 0.75;
@@ -69,12 +74,12 @@ const ContactButton = styled.div`
   padding: 2.188rem 0;
 `;
 
-const Image = styled.img`
-  display: block;
-  margin: 0 auto;
-  width: 1.375rem;
-  padding-bottom: 42px;
-`;
+// const Image = styled.img`
+//   display: block;
+//   margin: 0 auto;
+//   width: 1.375rem;
+//   padding-bottom: 42px;
+// `;
 
 const CongratulatoryMoney = () => {
   const [groomVisible, setGroomVisible] = useState(false);
@@ -87,9 +92,9 @@ const CongratulatoryMoney = () => {
         plain
         style={{ marginTop: 0, marginBottom: 32 }}
       >
-        <Title>축하의 마음을 전하세요</Title>
+        <Title>Happy · Joy</Title>
       </Divider>
-      <Image src={Flower} />
+      {/* <Image src={Flower} /> */}
       <Content data-aos="fade-up">
         축하의 마음을 담아 축의금을 전달해 보세요.
       </Content>
@@ -123,7 +128,7 @@ const CongratulatoryMoney = () => {
           </Description>,
         ]}
       >
-        <div>
+        {/* <div>
           <b>부 : {GROOM_FATHER_NAME}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={GROOM_FATHER_ACCOUNT_NUMBER}>
@@ -148,7 +153,7 @@ const CongratulatoryMoney = () => {
               {GROOM_MOTHER_ACCOUNT_NUMBER}
             </Button>
           </CopyToClipboard>
-        </div>
+        </div> */}
         <div>
           <b>신랑 {GROOM_NAME}</b>
           <Divider type="vertical" />
@@ -174,7 +179,7 @@ const CongratulatoryMoney = () => {
           </Description>,
         ]}
       >
-        <div>
+        {/* <div>
           <b>부 : {BRIDE_FATHER_NAME}</b>
           <Divider type="vertical" />
           <CopyToClipboard text={BRIDE_FATHER_ACCOUNT_NUMBER}>
@@ -199,7 +204,7 @@ const CongratulatoryMoney = () => {
               {BRIDE_MOTHER_ACCOUNT_NUMBER}
             </Button>
           </CopyToClipboard>
-        </div>
+        </div> */}
         <div>
           <b>신부 {BRIDE_NAME}</b>
           <Divider type="vertical" />

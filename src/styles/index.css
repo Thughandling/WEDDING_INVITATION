@@ -1,16 +1,55 @@
 :root {
-  --title-color: #d97d83;
+  --title-color: #ff7b00af;
+  --white-color: #ffffff;
+  --word-color: #7e6e6eb7;
+}
+/* 
+<Title />
+<Greeting />
+<Gallery/>
+<Location />
+<Quote />
+<CongratulatoryMoney />
+<Share />
+<Footer
+
+d97d83 */
+
+@font-face {
+  font-family: 'Cafe24Meongi-W-v1.0';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ownglyph_ryuttung-Rg';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryuttung-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CK_ctr0031';
+  src: url('../assets/fonts/CK_ctr0031.ttf');
 }
 * {
   font-family: "Noto Serif KR", serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, 'Deluxe Edition - Demo',
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* 카카오맵 버튼 없애기 */
+/* 카카오맵 버튼 없애기*/
 .wrap_controllers {
   display: none !important;
-}
+} 
 
 .root_daum_roughmap {
   width: 100% !important;
@@ -67,4 +106,8 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+button.image-gallery-thumbnail {
+  width: 180px;
 }
