@@ -5,7 +5,7 @@ import Flower from "../assets/flower2.png";
 
 const Wrapper = styled.div`
   padding-top: 50px;
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
 `;
 // 
@@ -49,6 +49,7 @@ const Content = styled.p`
 
 const Map = styled.div`
   width: 100%;
+
   padding: 0;
 `;
 

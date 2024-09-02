@@ -3,8 +3,8 @@ export const KAKAOTALK_API_TOKEN = "7d1e631d4af7d0ff451158c5afca9bf4"/*"JavaScri
 export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 
-export const WEDDING_DATE = "2024년 10월 26일, 토요일 오후 1시 30분";
-export const WEDDING_LOCATION = "그레이스 파티, 7층 그레이스파티 홀";
+export const WEDDING_DATE = "2024년 10월 26일 토요일 오후 1시 30분";
+export const WEDDING_LOCATION = "그레이스 파티 웨딩홀";
 
 export const GROOM_NAME = "고동영";
 export const GROOM_ACCOUNT_NUMBER = "하나은행 670-910540-60807";

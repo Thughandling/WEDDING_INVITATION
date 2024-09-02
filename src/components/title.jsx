@@ -31,8 +31,9 @@ const TitleWrapper = styled.div`
   height: max-content;
   text-align: center;
   padding-top: 42px;
-  font-weight: 500 !important;
-  color: #00712D;
+  // font-weight: 500 !important;
+  font-size: 14px;
+  // color: #00712D;
   animation: fadein 3s;
   -moz-animation: fadein 3s; /* Firefox */
   -webkit-animation: fadein 3s; /* Safari and Chrome */
@@ -44,24 +45,24 @@ const TitleWrapper = styled.div`
 //   height: 50%;
 // `;
 
-const WeddingInvitation = styled.p`
-  font-family : BookkMyungjo-Bd;
-  font-weight : Bd;
-  font-size: 1.25rem;
-  // opacity: 0.45;
-  margin-bottom: 16px;
-`;
+// const WeddingInvitation = styled.p`
+//   font-family : JejuMyeongjo;
+//   font-weight : Bd;
+//   font-size: 1.25rem;
+//   // opacity: 0.45;
+//   margin-bottom: 16px;
+// `;
 
 const GroomBride = styled.p`  
-  font-family : BookkMyungjo-Bd;
-  font-size: 1.5rem;
+  font-family : JejuMyeongjo;
+  font-size: 18px;
   font-weight: bold;
   opacity: 0.9;
   margin-bottom: 16px;
 `;
 
 const Schedule = styled.p`
-  font-family : BookkMyungjo-bd;
+  font-family : JejuMyeongjo;
   font-size: 1.0rem;
   // opacity: 0.65;
   margin-bottom: 24px;
@@ -72,9 +73,9 @@ const Title = () => {
     <Layout>
       <img src={BackgroundImage} style={{width: "100%"}}/>
       <TitleWrapper>
-        <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
+        {/* <WeddingInvitation>WEDDING INVITATION</WeddingInvitation> */}
         <GroomBride>
-          {GROOM_NAME} ♥ {BRIDE_NAME}
+        <span style={{size: 18, fontFamily:"JejuMyeongjo"}}>{GROOM_NAME}</span> <span style={{size: 14, fontWeight: 100 ,fontFamily:"JejuMyeongjo"}}>그리고</span> <span style={{size: 18, fontFamily:"JejuMyeongjo"}}>{BRIDE_NAME}</span>
         </GroomBride>
         <Schedule>
           {WEDDING_DATE}

@@ -5,6 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
 import Gallery from "../components/gallery";
 import Greeting from "../components/greeting";
+import WORD from "../components/word";
 import Title from "../components/title";
 import "../styles/index.css";
 
@@ -22,7 +23,7 @@ import "aos/dist/aos.css";
 const { Footer } = Layout;
 
 const Wrapper = styled.div`
-  background: #FFFBE6;
+  background: #fafafa;
   background-image: url(${GroovePaper});
   width: 100%;
 `;
@@ -54,6 +55,7 @@ const IndexPage = () => {
         <source src={Song} />
       </audio> */}
       <Title />
+      <WORD />
       <Greeting />
       <Gallery/>
       <Location />

@@ -37,6 +37,11 @@ d97d83 */
 }
 
 @font-face {
+  font-family: 'JejuMyeongjo';
+  src: url('../assets/fonts/JejuMyeongjo.ttf');
+}
+
+@font-face {
   font-family: 'CK_ctr0031';
   src: url('../assets/fonts/CK_ctr0031.ttf');
 }

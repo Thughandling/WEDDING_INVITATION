@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { Divider } from "antd";
-import {
-  GROOM_NAME,
-  GROOM_FATHER_NAME,
-  GROOM_MOTHER_NAME,
-  BRIDE_NAME,
-  BRIDE_FATHER_NAME,
-  BRIDE_MOTHER_NAME,
-} from "../../config";
-import Flower from "../assets/flower1.png";
+// import { Divider } from "antd";
+// import {
+//   GROOM_NAME,
+//   GROOM_FATHER_NAME,
+//   GROOM_MOTHER_NAME,
+//   BRIDE_NAME,
+//   BRIDE_FATHER_NAME,
+//   BRIDE_MOTHER_NAME,
+// } from "../../config";
+// import Flower from "../assets/flower1.png";
 
 const Wrapper = styled.div`
   padding-top: 20px;
-  margin: 0 auto;
-  width: 85%;
+  // margin: 16px;
+  width: 100%;
 `;
 
 
@@ -33,21 +33,21 @@ const Content = styled.p`
   font-size: 1rem;
   line-height: 1.75;
   opacity: 0.75;
-  margin-bottom: 16px;
+  // margin-bottom: 20px;
   width: 100%;
   text-align: center;
   // font-family: BookkMyungjo-Bd
   font-family: Ownglyph_ryuttung-Rg
 `;
 
-const GroomBride = styled.p`
-  font-size: 0.875rem;
-  line-height: 1.75;
-  opacity: 0.85;
-  margin-bottom: 0px;
-  width: 100%;
-  text-align: center;
-`;
+// const GroomBride = styled.p`
+//   font-size: 0.875rem;
+//   line-height: 1.75;
+//   opacity: 0.85;
+//   margin-bottom: 0px;
+//   width: 100%;
+//   text-align: center;
+// `;
 
 // const Image = styled.img`
 //   display: block;
@@ -59,9 +59,9 @@ const GroomBride = styled.p`
 const Greeting = () => {
   return (
     <Wrapper>
-      <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
+      {/* <Divider style={{ marginTop: 32, marginBottom: 32 }} plain>
         <Title data-aos="fade-up">Happy Wedding Worship</Title>
-      </Divider>
+      </Divider> */}
       {/* <Image data-aos="fade-up" src={Flower} /> */}
       <Content data-aos="fade-up">
         홀로 높아지기 보단 함께 낮아지길 소망하는
@@ -79,14 +79,14 @@ const Greeting = () => {
         자리를 빛내주시면 감사하겠습니다
         <br />
         <br />
-        <span style={{color:"003366", fontFamily:"BookkMyungjo-Bd", fontSize:"1.25rem"}}>
+        {/* <span style={{color:"003366", fontFamily:"BookkMyungjo-Bd", fontSize:"1.25rem"}}>
         무엇보다 뜨겁게 서로 사랑할지니
         <br />
         사랑은 허다한 죄를 덮느니라
         </span>
         <br />
         베드로 전서 4장 8절
-        <br />
+        <br /> */}
       </Content>
       {/* <GroomBride data-aos="fade-up">
         {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}의 장남 {GROOM_NAME}
