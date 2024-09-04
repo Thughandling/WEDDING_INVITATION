@@ -3,10 +3,13 @@ import { Layout } from "antd";
 import styled from "styled-components";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
-import Gallery from "../components/gallery";
+// import Gallery_gpt from "../components/gallery_gpt";
+// import Gallery from "../components/gallery";
+import Gallery_kdy from "../components/gallery_kdy";
 import Greeting from "../components/greeting";
 import WORD from "../components/word";
 import Title from "../components/title";
+import Main2 from "../components/main_name";
 import "../styles/index.css";
 
 import GroovePaper from "../assets/GroovePaper.png";
@@ -57,7 +60,8 @@ const IndexPage = () => {
       <Title />
       <WORD />
       <Greeting />
-      <Gallery/>
+      <Main2/>
+      <Gallery_kdy/>
       <Location />
       {/* <Quote /> */}
       <CongratulatoryMoney />

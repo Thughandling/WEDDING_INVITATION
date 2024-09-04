@@ -1,3 +1,6 @@
+# 2024-09-04 : JSX 와 CSS로 가능한 사실, CSS의 Flex와 Grid, React의 내장함수 State관리
+# Antd 라이브러리 활용성
+
 # 모바일 청첩장 React.js 템플릿
 
 결혼식 초대를 위한 청첩장 템플릿입니다.  

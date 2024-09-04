@@ -116,3 +116,9 @@ d97d83 */
 button.image-gallery-thumbnail {
   width: 180px;
 }
+
+.Gallery{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

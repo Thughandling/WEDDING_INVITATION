@@ -77,6 +77,9 @@ const Gallery = () => {
       <Divider style={{ marginTop: 0, marginBottom: 32 }} plain>
         <Title>우리의 아름다운 순간</Title>
       </Divider>
+      <div>
+        {/* <styled.image img src={GalleryPhoto1}/> */}
+      </div>
       <ImageGallery
         // styled = {outerWidth = 50%}
         showPlayButton={false}
