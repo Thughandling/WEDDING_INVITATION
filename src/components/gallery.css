@@ -1,0 +1,71 @@
+.grid-container {
+    padding: 5px;
+    width: 100%;
+    display: grid; /* Grid 레이아웃 정의 */
+
+    grid-template-columns: repeat(3, 1fr) ; /* 열크기 및 개수를 지정*/
+    /* grid-template-rows: auto; */
+    gap: 10px;
+   
+    /* height : 200px; */
+    /* 행의 크기를 헤더와 푸터는 내용에 맞게 */ 
+    /* 본문은 나머지 공간을 차지하도록 설정 */
+    /* grid-template-rows: auto 1fr auto;  */
+    
+    /* grid-template-areas: 
+      "header"
+      "content"
+      "footer"; 그리드 영역 이름 설정 */
+    min-height: max-content;
+}
+
+.photo-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.grid-container > img {
+    width : 100%;
+    height : 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button.slick-arrow {
+    width: 100px;
+}
+
+.modal-open-button, .modal-close-btn {
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+.modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    width: 250px;
+    height: 150px;
+    padding: 15px;
+}
+
+
+/* style={{
+    width: "100%",
+    height: "max-content",
+    background: "black",
+    opacity:'0.9',
+    position: "fixed",
+    display: "block",
+    justifyContent: "center",
+    alignItems: "center",
+    overflow: "hidden",
+  }} */
