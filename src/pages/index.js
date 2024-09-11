@@ -5,6 +5,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import "antd/dist/antd.css";
 // import Gallery_gpt from "../components/gallery_gpt";
 // import Gallery from "../components/gallery";
+import Tabs from "../components/tabs";
 import Gallery_kdy from "../components/gallery_kdy";
 import Greeting from "../components/greeting";
 import WORD from "../components/word";
@@ -62,6 +63,7 @@ const IndexPage = () => {
       <Greeting />
       <Main2/>
       <Gallery_kdy/>
+      <Tabs />
       <Location />
       {/* <Quote /> */}
       <CongratulatoryMoney />
